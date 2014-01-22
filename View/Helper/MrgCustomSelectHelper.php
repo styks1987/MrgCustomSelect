@@ -1,7 +1,7 @@
 <?php
 	App::uses('AppHelper', 'View/Helper');
 	class MrgCustomSelectHelper extends AppHelper{
-		var $helpers = ['Js'=>['MrgGoogleMap.MrgJqueryEngineHelper'],'Html'];
+		var $helpers = ['Js','Html'];
 		public function __construct(View $view, $settings = array()) {
 			parent::__construct($view, $settings);
 			// Load a custom select box
