@@ -10,8 +10,8 @@
 				$this->Html->script('MrgCustomSelect.jquery.selectBoxIt.js', array('inline'=>false));
 		}
 
-		public function init($element){
-			return $this->Js->buffer($this->Js->get($element)->selectBoxIt());
+		public function init($element, $options = []){
+			return $this->Js->buffer($this->Js->get($element)->selectBoxIt($options));
 		}
 	}
 ?>
