@@ -14,7 +14,7 @@
 			return $this->Js->buffer($this->Js->get($element)->selectBoxIt($options));
 		}
 
-		public function placeholder($inputs = ['input, textarea'], $otpions = []){
+		public function placeholder($inputs = ['input, textarea'], $options = []){
 			echo
 				$this->Html->script('MrgCustomSelect.jquery.placeholder.js', array('inline'=>false));
 			return $this->Js->buffer($this->Js->get(implode(',', $inputs))->placeholder($options));
