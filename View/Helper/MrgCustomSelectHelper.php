@@ -19,5 +19,13 @@
 				$this->Html->script('MrgCustomSelect.jquery.placeholder.js', array('inline'=>false));
 			return $this->Js->buffer($this->Js->get(implode(',', $inputs))->placeholder($options));
 		}
+
+		public function datepicker($element, $options = []){
+			// Requires jquery ui
+			echo
+				$this->Html->css('MrgCustomSelect.jquery.ui.datepicker', array('inline'=>false)).
+				$this->Html->script('MrgCustomSelect.jquery.ui.datepicker', array('inline'=>false));
+			return $this->Js->buffer($this->Js->get($element)->datepicker($options));
+		}
 	}
 ?>
